@@ -21,6 +21,7 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
 
 
 async function run() {
+    // for mongodb data
     try {
         const serviceCollection = client.db('cake').collection('services');
         const reviewCollection = client.db('cake').collection('reviews');
