@@ -27,6 +27,7 @@ async function run() {
 
         // create database collection for review
         const reviewCollection = client.db('cake').collection('reviews');
+        // get data from services
         app.get('/services', async (req, res) => {
             const query = {}
             const cursor = serviceCollection.find(query);
