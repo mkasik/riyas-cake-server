@@ -36,7 +36,7 @@ async function run() {
             const result = await serviceCollection.insertOne(service);
             res.send(result);
         });
-
+        // get data by id from serviecs
         app.get('/services/:id', async (req, res) => {
             const id = req.params.id;
             const query = { _id: ObjectId(id) };
