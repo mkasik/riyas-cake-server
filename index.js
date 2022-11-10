@@ -51,7 +51,7 @@ async function run() {
         app.get('/reviews', async (req, res) => {
             console.log(req.query)
             let query = {};
-
+            // get dynamic data by email address
             if (req.query.email) {
                 query = {
                     email: req.query.eamil
