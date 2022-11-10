@@ -24,6 +24,8 @@ async function run() {
     // for mongodb data
     try {
         const serviceCollection = client.db('cake').collection('services');
+
+        // create database collection for review
         const reviewCollection = client.db('cake').collection('reviews');
         app.get('/services', async (req, res) => {
             const query = {}
